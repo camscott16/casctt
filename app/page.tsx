@@ -12,13 +12,11 @@ export default function Home() {
       height={180}  
       priority
     />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Welcome; {" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              My name is Cam
+              printf(&quot;Welcome, my name is Cam&quot;);{""}
             </code>
-            .
           </li>
           <li>Ambitious Software Developer & Learner</li>
         </ol>
@@ -26,7 +24,7 @@ export default function Home() {
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href=""
+            href="/about"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +32,7 @@ export default function Home() {
           </a>
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href=""
+            href="/experience"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,9 +40,9 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-left justify-center">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-left gap-2 hover:underline hover:underline-offset-4"
           href="https://github.com/camscott16/"
           target="_blank"
           rel="noopener noreferrer"
