@@ -40,9 +40,9 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/file.svg"
+            src="/github.png"
             alt="File icon"
-            width={16}
+            width={23}
             height={16}
           />
           GitHub
@@ -55,10 +55,10 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/window.svg"
+            src="/linkedin.png"
             alt="Window icon"
-            width={16}
-            height={16}
+            width={22}
+            height={22}
           />
           LinkedIn
         </a>
@@ -70,10 +70,10 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
+            src="/education.png"
             alt="Globe icon"
-            width={16}
-            height={16}
+            width={22}
+            height={22}
           />
           Instagram
         </a>
