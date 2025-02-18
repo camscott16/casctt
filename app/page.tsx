@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] justify-center items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] justify-center items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-gist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="rounded-full"
-          src="/profile-pic2.jpg" 
+          src= "/logo.JPG"
           alt="Custom Image"
-          width={180}
-          height={180}  
+          width={150}
+          height={200}
           priority
         />
         <ol className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">

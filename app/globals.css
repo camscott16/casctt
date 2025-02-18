@@ -16,7 +16,7 @@
 
 body {
   color: var(--foreground);
-  background: url('/cool.jpg') no-repeat center center fixed;
+  background: #ffffff;
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
