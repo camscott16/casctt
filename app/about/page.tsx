@@ -1,12 +1,13 @@
 import Image from "next/image";
 import PinterestBoard from "@/components/PinterestBoard/pinterestBoard";
+import VideoPlayer from "@/components/VideoPlayer/videoPlayer";
 
 export default function AboutPage() {
   return (
     <div className="flex flex-col md:flex-row items-start justify-center min-h-screen p-6 space-y-6 md:space-x-10">
       {/* Left Section - Three Images */}
       <div className="flex flex-col space-y-6">
-        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-2xl overflow-hidden">
           <Image
             src="/boston.jpg" // Replace with your image path
             alt="About Image 1"
@@ -15,7 +16,7 @@ export default function AboutPage() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-2xl overflow-hidden">
           <Image
             src="/gallery.jpg" // Replace with your image path
             alt="About Image 2"
@@ -47,7 +48,7 @@ export default function AboutPage() {
       {/* Right Section - Bio & Pinterest Board */}
       <div className="flex-1 space-y-6">
         {/* Bio Section */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-2xl rounded-lg p-6">
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
           <p className="text-black">
             Currently studying CS + Artificial Intelligence @ Clemson University. Whether I&apos;m creating, traveling, or working on 
@@ -61,10 +62,17 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Pinterest Board */}
-        <div className="hidden md:block w-200">
-          <PinterestBoard />
-        </div>
+       <div className="flex flex-col md:flex-row shadow-2xl items-start md:space-x-6">
+          {/* Video Comes First Now */}
+          <div className="flex-1">
+            <VideoPlayer />
+          </div>
+          {/* Pinterest Board Now Appears to the Right */}
+          <div className="flex-1">
+            <PinterestBoard />
+          </div>
+        </div> 
+
       </div>
     </div>
   );

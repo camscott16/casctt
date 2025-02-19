@@ -1,59 +1,58 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
 
-const experiences = [
-    {
-        company: 'Intuit Credit Karma',
-        role: 'Software Engineer Intern',
-        duration: 'May 2024 - Aug 2024',
-        image: '/ck.png',
-        notes: [
-            'Responsible for Fullstack Development within Admin Tools using TypeScript and Scala',
-            'Improved fraud tools used by agents to mitigate Account Takeover through added functionality',
-            'Implemented RESTFUL and Thrift APIs to strengthen communication and integration of services',
-            'Led the migration of an Account Management Service, optimizing its capacity to deauthorize up to 1,500 more devices simultaneously',
-            'Updated Frontend elements of Admin Tools using React (JavaScript) to allow agents a more efficient way to remediate Account Takeovers and fraudulent account creation with precise logging',
-        ],
-    },
-    {
-        company: 'Clemson FinTech',
-        role: 'Lead Software Engineer',
-        duration: 'Jan 2024 - Present',
-        image: '/cufintech.jpeg',
-        notes: [
-            'Leading a diverse team of 16 prospective developers in designing and developing Fullstack applications for Clemson University’s first student-led FinTech organization',
-        ],
-    },
-];
-
-const Experience: React.FC = () => {
+export default function ExperiencePage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 sm:p-20 gap-16">
-      <h1 className="text-4xl font-bold mb-8">Experience</h1>
-      <div className="flex flex-col gap-8 sm:flex-row sm:gap-12">
-        {experiences.map((exp, index) => (
-          <div key={index} className="flex flex-col sm:flex-row items-center gap-8">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 space-y-8">
+      <h1 className="text-4xl font-bold text-gray-800">My Experience</h1>
+
+      {/* Experience Section */}
+      <div className="flex flex-col space-y-10 max-w-3xl">
+        {/* Company 1 */}
+        <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
+          <div className="w-170 h-170 border-4 border-gray-300 rounded-lg shadow-xl overflow-hidden">
             <Image
-              src={exp.image}
-              alt={`${exp.company} Logo`}
-              width={180}
-              height={180}
-              className="rounded-lg"
+              src="/ck.png"
+              alt="Company 1 Logo"
+              width={170}
+              height={170}
+              className="object-cover w-full h-full"
             />
-            <div className="text-left max-w-lg">
-              <h2 className="text-2xl font-semibold">{exp.company}</h2>
-              <p className="text-lg">{exp.role} ({exp.duration})</p>
-              <ul className="mt-4 text-sm list-disc list-inside">
-                {exp.notes.map((note, i) => (
-                  <li key={i}>{note}</li>
-                ))}
-              </ul>
-            </div>
           </div>
-        ))}
+          <div className="text-gray-700 text-lg">
+            <h2 className="text-2xl font-bold text-gray-900">Credit Karma - Charlotte, NC</h2>
+            <p className="mt-2">
+              Built cool stuff, met even cooler people :P
+          </p> 
+          <p className="mt-2 font-bold">
+              User Management & Connected Accounts
+          </p>
+          <p className="mt-2">
+              Enhanced Full Stack development skills by optimizing User Management and Fraud Remediation Tools.
+              Implemented solutions to combat Account Takeover (ATO), maintaining and improving user security and trust.
+          </p>
+          </div>
+        </div>
+
+        {/* Company 3 */}
+        <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
+          <div className="w-140 h-140 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/intuit.jpg" 
+              alt="Company 3 Logo"
+              width={140}
+              height={140}
+              className="object-cover w-full h-full"
+            />
+          </div>
+          <div className="text-gray-700 text-lg">
+          <h2 className="text-2xl font-bold text-gray-900">Intuit - Atlanta, GA</h2>
+            <p className="mt-2">
+             Incoming Softwar Engineer Intern, Summer 2025
+             
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
-};
-
-export default Experience;
+}
