@@ -33,6 +33,15 @@ export default function AboutPage() {
             className="object-cover w-full h-full"
           />
         </div>
+        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+          <Image
+            src="/ageless.PNG" // Replace with your image path
+            alt="About Image 4"
+            width={192}
+            height={192}
+            className="object-cover w-full h-full"
+          />
+        </div>
       </div>
 
       {/* Right Section - Bio & Pinterest Board */}
@@ -46,7 +55,7 @@ export default function AboutPage() {
             projects, I love solving complex problems and making an impact. 
           </p>
           <p className="text-black mt-4">
-            In my free time, I enjoy learning about anything and everything. Also studying to get my private pilot's liscence.
+            In my free time, I enjoy learning about anything and everything. Also studying to get my private pilot&apos;s liscence.
           </p>
           <p className="text-black mt-4">
            Checkout the pinterest for some fit inspo :P
