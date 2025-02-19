@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import PinterestBoard from '@/components/PinterestBoard/pinterestBoard';
 
 const About: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ const About: React.FC = () => {
         Motivated and passionate third-year Computer Science major seeking an entry-level position to build upon a strong educational foundation and apply an innovative approach to Computer Science. Strong communication skills and excellent understanding of teamwork and leadership in professional settings. Eager to maximize interpersonal skills in an engaging and challenging environment.
         </p>
 
+      </div>
+      <div className="hidden md:block w-80">
+        <PinterestBoard />
       </div>
     </div>
   );
