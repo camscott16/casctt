@@ -64,8 +64,11 @@ export default function AboutPage() {
 
        <div className="flex flex-col md:flex-row shadow-2xl items-start md:space-x-6">
           {/* Video Comes First Now */}
-          <div className="flex-1">
-            <VideoPlayer />
+          <div className="wd-100">
+            <VideoPlayer src="/walk.mp4" />
+          </div>
+          <div className="wd-100">
+            <VideoPlayer src="evangelion.mp4" />
           </div>
           {/* Pinterest Board Now Appears to the Right */}
           <div className="flex-1">
