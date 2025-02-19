@@ -50,8 +50,7 @@ export default function AboutPage() {
         <div className="bg-white shadow-md rounded-lg p-6">
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
           <p className="text-black">
-            Hi! I&apos;m Cameron Scott. I&apos;m passionate about technology, Software Engineering, 
-            and Finance. Whether I&apos;m creating, traveling, or working on 
+            Currently studying CS + Artificial Intelligence @ Clemson University. Whether I&apos;m creating, traveling, or working on 
             projects, I love solving complex problems and making an impact. 
           </p>
           <p className="text-black mt-4">

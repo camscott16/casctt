@@ -28,7 +28,7 @@ const PinterestBoard = () => {
         href="https://www.pinterest.com/camscott17/alyv/"
       >
         {/* Fallback message if widget fails */}
-        <p className="text-gray-600 text-sm">Loading Pinterest Board...</p>
+        <p className="text-gray-600 text-sm">Loading Pinterest Board... You may have to refresh :P</p>
       </a>
     </div>
   );

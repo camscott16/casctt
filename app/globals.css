@@ -28,3 +28,14 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Ensure text is always visible on all devices */
+body {
+  color: #1a202c; /* Dark gray (adjust if needed) */
+  background-color: #ffffff; /* Ensure background stays white */
+}
+
+/* Force all text inside elements to inherit the correct color */
+* {
+  color: inherit;
+}
