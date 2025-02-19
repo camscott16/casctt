@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import VideoPlayer from "@/components/VideoPlayer/videoPlayer";
 
 export default function Home() {
   return (
