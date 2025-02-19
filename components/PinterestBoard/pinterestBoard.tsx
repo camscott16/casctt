@@ -11,7 +11,10 @@ const PinterestBoard = () => {
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      // Only remove the script if it still exists in the document
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
