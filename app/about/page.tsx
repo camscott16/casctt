@@ -40,14 +40,16 @@ export default function AboutPage() {
         {/* Bio Section */}
         <div className="bg-white shadow-md rounded-lg p-6">
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
-          <p className="text-gray-600">
-            Hi! I'm Cameron Scott. I'm passionate about technology, software engineering, 
-            and finance. Whether I’m coding, building fintech solutions, or working on 
-            personal projects, I love solving complex problems and making an impact. 
+          <p className="text-black">
+            Hi! I&apos;m Cameron Scott. I&apos;m passionate about technology, Software Engineering, 
+            and Finance. Whether I&apos;m creating, traveling, or working on 
+            projects, I love solving complex problems and making an impact. 
           </p>
-          <p className="text-gray-600 mt-4">
-            In my free time, I enjoy exploring new technologies, working on my portfolio, 
-            and expanding my skill set in both finance and tech.
+          <p className="text-black mt-4">
+            In my free time, I enjoy learning about anything and everything. Also studying to get my private pilot's liscence.
+          </p>
+          <p className="text-black mt-4">
+           Checkout the pinterest for some fit inspo :P
           </p>
         </div>
 
