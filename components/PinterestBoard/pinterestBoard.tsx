@@ -22,10 +22,10 @@ const PinterestBoard = () => {
     <div className="p-4 shadow-md bg-white rounded-lg">
       <a
         data-pin-do="embedBoard"
-        data-pin-board-width="300"
+        data-pin-board-width="800"
         data-pin-scale-height="500"
-        data-pin-scale-width="80"
-        href="https://www.pinterest.com/camscott17/espa%C3%B1a/"
+        data-pin-scale-width="140"
+        href="https://www.pinterest.com/camscott17/alyv/"
       >
         {/* Fallback message if widget fails */}
         <p className="text-gray-600 text-sm">Loading Pinterest Board...</p>

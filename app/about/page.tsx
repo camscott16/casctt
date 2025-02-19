@@ -1,30 +1,61 @@
-import Image from 'next/image';
-import React from 'react';
-import PinterestBoard from '@/components/PinterestBoard/pinterestBoard';
+import Image from "next/image";
+import PinterestBoard from "@/components/PinterestBoard/pinterestBoard";
 
-const About: React.FC = () => {
+export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col sm:flex-row items-center justify-center p-8 sm:p-20 gap-16">
-      <Image
-        src="/pfp.png" // Replace with your image
-        alt="Profile Picture"
-        width={180}
-        height={180}
-        className="rounded-full"
-      />
-      <div className="text-left max-w-lg">
-        <h1 className="text-4xl font-bold mb-4">About Me</h1>
-        <p className="text-lg">
-        Motivated and passionate third-year Computer Science major seeking an entry-level position to build upon a strong educational foundation and apply an innovative approach to Computer Science. Strong communication skills and excellent understanding of teamwork and leadership in professional settings. Eager to maximize interpersonal skills in an engaging and challenging environment.
-        </p>
-
+    <div className="flex flex-col md:flex-row items-start justify-center min-h-screen p-6 space-y-6 md:space-x-10">
+      {/* Left Section - Three Images */}
+      <div className="flex flex-col space-y-6">
+        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+          <Image
+            src="/boston.jpg" // Replace with your image path
+            alt="About Image 1"
+            width={192}
+            height={192}
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+          <Image
+            src="/gallery.jpg" // Replace with your image path
+            alt="About Image 2"
+            width={192}
+            height={192}
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+          <Image
+            src="/yleaves.jpg" // Replace with your image path
+            alt="About Image 3"
+            width={192}
+            height={192}
+            className="object-cover w-full h-full"
+          />
+        </div>
       </div>
-      <div className="hidden md:block w-80">
-        <PinterestBoard />
+
+      {/* Right Section - Bio & Pinterest Board */}
+      <div className="flex-1 space-y-6">
+        {/* Bio Section */}
+        <div className="bg-white shadow-md rounded-lg p-6">
+          <h1 className="text-3xl font-bold mb-4">About Me</h1>
+          <p className="text-gray-600">
+            Hi! I'm Cameron Scott. I'm passionate about technology, software engineering, 
+            and finance. Whether I’m coding, building fintech solutions, or working on 
+            personal projects, I love solving complex problems and making an impact. 
+          </p>
+          <p className="text-gray-600 mt-4">
+            In my free time, I enjoy exploring new technologies, working on my portfolio, 
+            and expanding my skill set in both finance and tech.
+          </p>
+        </div>
+
+        {/* Pinterest Board */}
+        <div className="hidden md:block w-200">
+          <PinterestBoard />
+        </div>
       </div>
     </div>
   );
-};
-
-export default About;
-
+}
