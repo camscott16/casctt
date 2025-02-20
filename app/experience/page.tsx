@@ -47,7 +47,7 @@ export default function ExperiencePage() {
           <div className="text-gray-700 text-lg">
           <h2 className="text-2xl font-bold text-gray-900">Intuit - Atlanta, GA</h2>
             <p className="mt-2">
-             Incoming Softwar Engineer Intern, Summer 2025
+             Incoming Software Engineer Intern, Summer 2025
              
             </p>
           </div>
