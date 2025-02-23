@@ -9,7 +9,7 @@ export default function ExperiencePage() {
       <div className="flex flex-col space-y-10 max-w-4xl w-full">
         {/* Company 1 */}
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
-          <div className="flex rounded-lg shadow-xl overflow-hidden">
+          <div className="flex rounded-lg shadow-2xl overflow-hidden">
             <Image
               src="/ck.png"
               alt="Company 1 Logo"
@@ -37,9 +37,9 @@ export default function ExperiencePage() {
 
         {/* Company 3 */}
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
-          <div className="flex rounded-lg shadow-xl overflow-hidden max-w-60">
+          <div className="flex rounded-lg overflow-hidden max-w-60">
             <Image
-              src="/amz.gif"
+              src="/cook.png"
               alt="Company 3 Logo"
               width={220}
               height={220}
@@ -49,10 +49,10 @@ export default function ExperiencePage() {
           </div>
           <div className="text-gray-700 text-lg">
             <h2 className="text-2xl font-bold text-gray-900">
-              Amazon Robotics - North Reading, MA
+              Soon to be announced...
             </h2>
             <p className="mt-2">
-              Incoming Software Development Engineer Intern, Summer 2025
+              Incoming Software Engineer Intern, Summer 2025
             </p>
           </div>
         </div>

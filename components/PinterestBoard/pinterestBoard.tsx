@@ -22,7 +22,7 @@ const PinterestBoard = () => {
     <div className="p-4 flex shadow-2xl bg-white rounded-lg">
       <a
         data-pin-do="embedBoard"
-        data-pin-board-width="1200"
+        data-pin-board-width="1530"
         data-pin-scale-height="500"
         data-pin-scale-width="140"
         href="https://www.pinterest.com/camscott17/alyv/"
