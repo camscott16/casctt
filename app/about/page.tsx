@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="flex flex-col md:flex-row items-start justify-center min-h-screen p-6 space-y-6 md:space-x-10">
       {/* Left Section - Three Images */}
       <div className="flex flex-col space-y-6">
-        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-2xl overflow-hidden">
+        <div className="w-48 h-48 rounded-lg shadow-2xl overflow-hidden">
           <Image
             src="/boston.jpg" // Replace with your image path
             alt="About Image 1"
@@ -16,7 +16,7 @@ export default function AboutPage() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-2xl overflow-hidden">
+        <div className="w-48 h-48 rounded-lg shadow-2xl overflow-hidden">
           <Image
             src="/gallery.jpg" // Replace with your image path
             alt="About Image 2"
@@ -25,7 +25,7 @@ export default function AboutPage() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+        <div className="w-48 h-48 rounded-lg shadow-lg overflow-hidden">
           <Image
             src="/yleaves.jpg" // Replace with your image path
             alt="About Image 3"
@@ -34,7 +34,7 @@ export default function AboutPage() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="w-48 h-48 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+        <div className="w-48 h-48 rounded-lg shadow-lg overflow-hidden">
           <Image
             src="/ageless.PNG" // Replace with your image path
             alt="About Image 4"
@@ -63,14 +63,6 @@ export default function AboutPage() {
         </div>
 
        <div className="flex flex-col md:flex-row shadow-2xl items-start md:space-x-6">
-          {/* Video Comes First Now */}
-          <div className="wd-100">
-            <VideoPlayer src="/walk.mp4" />
-          </div>
-          <div className="wd-100">
-            <VideoPlayer src="evangelion.mp4" />
-          </div>
-          {/* Pinterest Board Now Appears to the Right */}
           <div className="flex-1">
             <PinterestBoard />
           </div>

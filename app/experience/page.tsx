@@ -6,49 +6,53 @@ export default function ExperiencePage() {
       <h1 className="text-4xl font-bold text-gray-800">My Experience</h1>
 
       {/* Experience Section */}
-      <div className="flex flex-col space-y-10 max-w-3xl">
+      <div className="flex flex-col space-y-10 max-w-4xl w-full">
         {/* Company 1 */}
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
-          <div className="w-170 h-170 border-4 border-gray-300 rounded-lg shadow-xl overflow-hidden">
+          <div className="flex rounded-lg shadow-xl overflow-hidden">
             <Image
               src="/ck.png"
               alt="Company 1 Logo"
-              width={170}
-              height={170}
+              width={220}
+              height={220}
               className="object-cover w-full h-full"
             />
           </div>
           <div className="text-gray-700 text-lg">
-            <h2 className="text-2xl font-bold text-gray-900">Credit Karma - Charlotte, NC</h2>
+            <h2 className="text-2xl font-bold text-gray-900">
+              Credit Karma - Charlotte, NC
+            </h2>
             <p className="mt-2">
               Built cool stuff, met even cooler people :P
-          </p> 
-          <p className="mt-2 font-bold">
-              User Management & Connected Accounts
-          </p>
-          <p className="mt-2">
+            </p>
+            <p className="mt-2 font-bold">
+              User Management &amp; Connected Accounts
+            </p>
+            <p className="mt-2">
               Enhanced Full Stack development skills by optimizing User Management and Fraud Remediation Tools.
               Implemented solutions to combat Account Takeover (ATO), maintaining and improving user security and trust.
-          </p>
+            </p>
           </div>
         </div>
 
         {/* Company 3 */}
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
-          <div className="w-140 h-140 border-4 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+          <div className="flex rounded-lg shadow-xl overflow-hidden max-w-60">
             <Image
-              src="/intuit.jpg" 
+              src="/amz.gif"
               alt="Company 3 Logo"
-              width={140}
-              height={140}
+              width={220}
+              height={220}
               className="object-cover w-full h-full"
+              unoptimized
             />
           </div>
           <div className="text-gray-700 text-lg">
-          <h2 className="text-2xl font-bold text-gray-900">Intuit - Atlanta, GA</h2>
+            <h2 className="text-2xl font-bold text-gray-900">
+              Amazon Robotics - North Reading, MA
+            </h2>
             <p className="mt-2">
-             Incoming Software Engineer Intern, Summer 2025
-             
+              Incoming Software Development Engineer Intern, Summer 2025
             </p>
           </div>
         </div>
