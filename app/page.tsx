@@ -26,13 +26,13 @@ export default function Home() {
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <Link
             href="/about"
-            className="rounded-md border-2 border-black transition-colors flex items-center justify-center bg-white text-black gap-2 hover:bg-gray-200 dark:bg-black dark:text-white dark:border-white dark:hover:bg-gray-700 text-sm sm:text-base h-10 sm:h-12 px-6 sm:px-8"
+            className="rounded-md border-2 shadow-2xl border-white transition-colors flex items-center justify-center bg-white text-black gap-2 dark:bg-black dark:text-white dark:border-white text-sm sm:text-base h-10 sm:h-12 px-6 sm:px-8"
           >
             About
           </Link>
           <Link
             href="/experience"
-            className="rounded-md border-2 shadow-2xl border-black transition-colors flex items-center justify-center bg-white text-black gap-2 hover:bg-gray-200 dark:bg-black dark:text-white dark:border-white dark:hover:bg-gray-700 text-sm sm:text-base h-10 sm:h-12 px-6 sm:px-8"
+            className="rounded-md border-2 shadow-2xl border-white transition-colors flex items-center justify-center bg-white text-black gap-2 dark:bg-black dark:text-white dark:border-white text-sm sm:text-base h-10 sm:h-12 px-6 sm:px-8"
           >
             Experience
           </Link>
