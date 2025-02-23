@@ -1,6 +1,5 @@
 import Image from "next/image";
 import PinterestBoard from "@/components/PinterestBoard/pinterestBoard";
-import VideoPlayer from "@/components/VideoPlayer/videoPlayer";
 
 export default function AboutPage() {
   return (
