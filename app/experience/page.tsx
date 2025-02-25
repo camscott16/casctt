@@ -39,7 +39,7 @@ export default function ExperiencePage() {
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-6">
           <div className="flex rounded-lg overflow-hidden max-w-60">
             <Image
-              src="/cook.png"
+              src="/amz.gif"
               alt="Company 3 Logo"
               width={220}
               height={220}
@@ -49,7 +49,7 @@ export default function ExperiencePage() {
           </div>
           <div className="text-gray-700 text-lg">
             <h2 className="text-2xl font-bold text-gray-900">
-              Soon to be announced...
+              Amazon Robotics - Boston, MA
             </h2>
             <p className="mt-2">
               Incoming Software Engineer Intern, Summer 2025
