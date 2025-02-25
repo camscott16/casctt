@@ -9,13 +9,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md p-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-gray-800">
+        <Link href="/" className="text-2xl font-bold text-black">
           Cameron Scott
         </Link>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-gray-800"
+          className="md:hidden p-2 text-black"
         >
           {isOpen ? "✖" : "☰"}
         </button>
@@ -26,22 +26,22 @@ const Navbar = () => {
           } md:block`}
         >
           <li>
-            <Link href="/" className="text-gray-600 hover:text-black">
+            <Link href="/" className="text-black hover:text-black">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about" className="text-gray-600 hover:text-black">
+            <Link href="/about" className="text-black hover:text-black">
               About
             </Link>
           </li>
           <li>
-            <Link href="/experience" className="text-gray-600 hover:text-black">
+            <Link href="/experience" className="text-black hover:text-black">
               Experience
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="text-gray-600 hover:text-black">
+            <Link href="/contact" className="text-black hover:text-black">
               Contact
             </Link>
           </li>
