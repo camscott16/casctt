@@ -5,7 +5,7 @@ export default function ContactPage() {
     <div className="flex flex-col items-center justify-center min-h-screen p-6">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">Contact Me</h1>
       <p className="text-gray-600 mb-6">
-        Click the button below to open your default email client and send me a message.
+        Button opens your default email client. Feel free to ask me anything :)
       </p>
       <a
         href="mailto:camscott2003@outlook.com?subject=Contact%20from%20My%20Website"
